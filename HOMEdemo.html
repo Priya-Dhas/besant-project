@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Beauty</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .container{
+        display:inline;
+        align-items:center; 
+        background-color: aliceblue;   
+    }
+    img{
+        height:75px;
+    }
+    .p1{
+        display: inline-block;
+        font-family:'Trebuchet MS';
+        font-size:xx-large;
+        margin-top:10px;
+        color:midnightblue;
+        
+    }
+    body{
+        background-image:url('blacksplash.webp');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-color: black;
+    }
+    .logo{
+        margin-right:25px;
+    }   
+    .logo img{
+        height:150px;
+    }
+    h1{
+        color:white;
+        font-family:'Gill Sans';
+    }
+    h1{
+        font-size:38px;
+        margin:0;
+        font-family:'Gill Sans';
+    }
+    p{
+        font-size:15px;
+        color:bisque;
+        margin:0;
+    }
+    .header{
+        display:flex;
+        align-items: center;
+        padding: 60px;
+    }
+    .menubar{
+        display: inline;
+        float: right;
+        margin-top: 35px;
+    }
+    .menubar ul{
+        display: inline-flex;
+        list-style: none;
+    }
+    .menubar ul li{
+    width: 120px;
+    margin: 1px;  
+    padding-right:20px;     
+    }
+    .menubar ul li a{
+    text-decoration: none;
+    color: blue;   
+    }
+    .active, .menubar ul li:hover{
+        background-color: lavender;
+    }
+    .submenu{
+        display:none;
+    }
+</style>
+<body>
+    <div class="container">
+        <img src="face.jpeg" alt="face" title="beauty">
+        <p class="p1">Riya's Beauty Care</p>
+    </div>
+        <div class="header">
+        <div class="logo">
+            <img src="face.jpeg" alt="face" title="beauty">    
+        </div>
+            <nav class="menubar">
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">About Us</a>
+                        <div class="submenu">
+                        <ul>
+                            <li><a href="">Company History</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Mission and Values</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+          <div class="company-info">
+            <h1>Riya's Beauty Care</h1>
+            <p>- "Beauty, it's our duty."</p>
+            <p>since 1998.</p>
+            <p>+6374420132</p>
+            </div>
+    </div> 
+</body>
+</html>

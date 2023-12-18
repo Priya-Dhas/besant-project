@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Beauty Care</title>
+    <!------font awesome icons from clodfare.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    img{
+        height:83px;
+    }
+    .companyname{
+        color:floralwhite;
+        margin-right: 17px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 2px; /*space between letters*/
+    }
+    .image1{
+        display: flex;
+        align-items: center;
+        white-space: nowrap; /*fill the unwanted space*/
+        background-color:#1D1CE5;
+    }
+    .menubar{
+        background-color:#1D1CE5;
+        float:right; /*allign the content right side */
+        margin-left:300px ;
+    }
+    .menubar ul{
+        display: inline-flex;
+        list-style: none;
+    }
+    .menubar ul li{
+        width:120px;
+        margin:15px;
+        padding:15px
+    }
+    .menubar ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+    .active, .menubar ul li:hover{
+        background-color:#4649FF;  
+        cursor: pointer; 
+    }
+    .submenu{
+        display: none;
+    }
+    .menubar ul li:hover .submenu{
+        display: block;
+        position: absolute;
+        background:#7978FF;
+        margin-top: 15px;
+        padding-left: 1px;
+    }
+    .menubar ul li:hover .submenu ul{   /* THE DROPDOWN CONTENT*/
+        display: block;
+        margin: 1px;
+    }
+    .menubar ul li:hover .submenu ul li{
+        width:150px;
+        padding:10px;
+        cursor:pointer;
+    }
+    body{
+        background-image: url('assests/images/blacksplash.webp');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-color:#090580;
+    }
+</style>
+<body>
+    <div class="image1">
+        <img src="assests/images/face.jpeg" alt="beauty">
+        <h1 class="companyname"> Riya's Beauty Care</h1> 
+        <div class="menubar">
+            <ul>
+                <li class="active"><a><i class="fa fa-home"></i> Home</a></li>
+                <li>
+                    <a href="history.html"><i class="fa fa-users"></i>  About us</a>
+                </li>
+                <li>
+                    <a><i class="fa fa-cogs"></i>  Services</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="skincare.html">SkinCare Service</a></li>
+                            <li><a href="Makeup.html">Makeup Service</a></li>
+                            <li><a href="Products.html">Products</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="contact.html"><i class="fa fa-phone"></i> Contact us</a>
+                </li>
+            </ul>
+    </div> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
